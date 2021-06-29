@@ -3,25 +3,31 @@ import App from './App.vue'
 
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+import { faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle, faExclamationCircle, faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload }
+from "@fortawesome/free-solid-svg-icons";
+library.add(faCheck, faCheckCircle, faInfoCircle, faExclamationTriangle, faExclamationCircle, faArrowUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload);
+Vue.component('vue-fontawesome', FontAwesomeIcon);
+
 
 Vue.config.productionTip = false
 
 Vue.use(Buefy, {
+    defaultIconComponent: 'vue-fontawesome',
     defaultIconPack: 'fas',
-    defaultContainerElement: '#content',
 })
 
-// library.add(faUserSecret)
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
+library.add(faUserSecret)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
     el: '#app',
     render: h => h(App),
-    // components: { App },
-    // template: '<App/>'
+    components: { App },
+    template: '<App/>'
 
 }).$mount('#app')
 
