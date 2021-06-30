@@ -39,7 +39,15 @@
     </b-menu-list>
   </b-menu>
   <aside class="conteudo">
-
+    <h2>Templates de diplmas cadastrados</h2>
+    <b-menu-item class="menu-filtro" icon="filter" label="Filtros"></b-menu-item>
+    <span>Ordernar Por</span>
+     <b-button type="is-dark">Cadastrar</b-button>
+      <b-button type="is-dark">Data</b-button>
+      <b-button type="is-primary">Nome</b-button>
+      <b-button type="is-primary">Atualização</b-button>
+      <b-button size="is-small" type="is-dark">diplomas</b-button>
+      
   </aside>
   </section>
 </div>
