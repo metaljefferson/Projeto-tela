@@ -47,7 +47,15 @@
       <b-button type="is-primary">Nome</b-button>
       <b-button type="is-primary">Atualização</b-button>
       <b-button size="is-small" type="is-dark">diplomas</b-button>
-      
+
+      <h2>Titulo do diplomas a ser usado como template</h2>
+      <span>Escola que usa  esse diploma</span>
+      <span>Curso que usa  esse diploma</span>
+      <span>N° de usuarios associados</span>
+
+      <span class="bolinha_status _primeira_bolinha "></span>
+      <span class="bolinha_status _segunda_bolinha "></span>
+
   </aside>
   </section>
 </div>
@@ -118,5 +126,17 @@ export default {
 }
 .container{
   display: flex;
+}
+.bolinha_status{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+._primeira_bolinha{
+  background-color: red;
+}
+._segunda_bolinha{
+  background-color: yellow;
 }
 </style>
