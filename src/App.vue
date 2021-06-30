@@ -29,16 +29,19 @@
         
       </b-navbar>
     </div>
-
-  <b-menu>
-    <b-menu-list class="menu-lateral">
-      <b-menu-item class="menu-inicio" icon="information-outline" label="Inicio"></b-menu-item>
-      <b-menu-item class="menu-escolas" icon="information-outline" label="Escolas"></b-menu-item>
-      <b-menu-item class="menu-usuarios" icon="information-outline" label="Usuarios"></b-menu-item>
-      <b-menu-item class="menu-diploma" icon="information-outline" label="Diplomas"></b-menu-item>
+<section class="container"> 
+  <b-menu class="menu-lateral">
+    <b-menu-list class="menu-lateral2" >
+      <b-menu-item class="menu-inicio"  icon="house-user"  label="Inicio"></b-menu-item>
+      <b-menu-item class="menu-escolas"  icon="users" label="Escolas"></b-menu-item>
+      <b-menu-item class="menu-usuarios" icon="user" label="Usuarios"></b-menu-item>
+      <b-menu-item class="menu-diploma" icon="graduation-cap" label="Diplomas"></b-menu-item>
     </b-menu-list>
   </b-menu>
-  
+  <aside class="conteudo">
+
+  </aside>
+  </section>
 </div>
 </template>
 
@@ -105,11 +108,7 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 }
-.menu-list {
-  padding: 35px;
-  margin-top: 35px;
-}
-.menu-item{
-  padding: 15px;
+.container{
+  display: flex;
 }
 </style>
