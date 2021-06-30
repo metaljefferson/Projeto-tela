@@ -139,4 +139,26 @@ export default {
 ._segunda_bolinha{
   background-color: yellow;
 }
+
+.menu-lateral{
+   width: 25%;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding-top: 44px;
+    padding-left: 33px;
+    border: 2px 2px #ccc;
+}
+.menu-inicio{
+  padding-top: 10px;
+  color: greenyellow;
+}
+.menu-escolas{
+  padding-top: 10px;
+}
+.menu-usuarios{
+  padding-top: 10px;
+}
+.menu-diploma{
+  padding-top: 10px;
+}
 </style>
