@@ -29,7 +29,7 @@
         
       </b-navbar>
     </div>
-<section class="container"> 
+<section class="container">
   <b-menu class="menu-lateral">
     <b-menu-list class="menu-lateral2" >
       <b-menu-item class="menu-inicio"  icon="house-user"  label="Inicio"></b-menu-item>
