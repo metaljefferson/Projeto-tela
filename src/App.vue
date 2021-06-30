@@ -39,7 +39,7 @@
     </b-menu-list>
   </b-menu>
   <aside class="conteudo">
-    <h2>Templates de diplmas cadastrados</h2>
+    <h2 class="template-diploma">Templates de diplomas cadastrados</h2>
     <b-menu-item class="menu-filtro" icon="filter" label="Filtros"></b-menu-item>
     <span>Ordernar Por</span>
      <b-button type="is-dark">Cadastrar</b-button>
@@ -135,6 +135,7 @@ export default {
 }
 ._primeira_bolinha{
   background-color: red;
+  
 }
 ._segunda_bolinha{
   background-color: yellow;
@@ -160,5 +161,16 @@ export default {
 }
 .menu-diploma{
   padding-top: 10px;
+}
+.template-diploma{
+  font-weight: bolder;
+    padding-left: 25px;
+    font-size: x-large;
+    margin-top: 15px;
+
+}
+.menu-filtro{
+  padding-left: 20px;
+  padding-top: 45px;
 }
 </style>
