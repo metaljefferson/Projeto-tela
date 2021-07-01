@@ -221,7 +221,8 @@ header{
   justify-content: initial;
   width: 80px;
   text-transform: uppercase;
-  border-radius: 60px;
+  border-radius: 60px!important;
   text-align: center;
+  padding-left: 10px;
 }
 </style>
