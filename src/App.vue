@@ -54,18 +54,19 @@
         <b-button class="button-radius-right" type="is-primary">Atualização</b-button>
       </div>
     </div>
+
     <div class="diplomas-left">
        <b-button class="diploma-button" size="is-small" type="is-dark">diplomas</b-button>
     </div>
-      
-      <!-- <h2>Titulo do diplomas a ser usado como template</h2>
+      <div class="titulo-template">
+      <h2>Titulo do diplomas a ser usado como template</h2>
       <span>Escola que usa  esse diploma</span>
       <span>Curso que usa  esse diploma</span>
       <span>N° de usuarios associados</span>
 
       <span class="bolinha_status _primeira_bolinha "></span>
-      <span class="bolinha_status _segunda_bolinha "></span> -->
-
+      <span class="bolinha_status _segunda_bolinha "></span>
+      </div>
   </aside>
   </section>
 </div>
@@ -192,7 +193,8 @@ header{
   align-items: center;
   margin-top: 40px;
   border-bottom:  3px dotted #ccc;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .filtro-menu{
   display: flex;
@@ -226,5 +228,13 @@ header{
   text-transform: uppercase;
   border-radius: 60px!important;
   padding-left: 10px;
+}
+.diplomas-left{
+  width: 100%;
+}
+.titulo-template{
+  display: flex;
+  width: 100%;
+  
 }
 </style>
