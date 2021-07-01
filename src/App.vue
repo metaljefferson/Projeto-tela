@@ -54,8 +54,9 @@
         <b-button class="button-radius-right" type="is-primary">Atualização</b-button>
       </div>
     </div>
-    
+    <div class="diplomas-left">
        <b-button class="diploma-button" size="is-small" type="is-dark">diplomas</b-button>
+    </div>
       
       <!-- <h2>Titulo do diplomas a ser usado como template</h2>
       <span>Escola que usa  esse diploma</span>
@@ -190,6 +191,8 @@ header{
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  border-bottom:  3px dotted #ccc;
+  padding-bottom: 60px;
 }
 .filtro-menu{
   display: flex;
@@ -222,7 +225,6 @@ header{
   width: 80px;
   text-transform: uppercase;
   border-radius: 60px!important;
-  text-align: center;
   padding-left: 10px;
 }
 </style>
