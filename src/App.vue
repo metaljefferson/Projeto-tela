@@ -43,10 +43,21 @@
     <h2 class="template-diploma">Templates de diplomas cadastrados</h2>
     <b-button class="button-cadastrar" type="is-dark">Cadastrar</b-button>
     </header>
+    <div class="right-menu">
+      <div class="filtro-menu">
+        <b-button class="button-filter" size="is-medium" icon-left="filter">Filtros</b-button>
+        <b-button class="ordernar-por" size="is-medium">Ordenar por</b-button>
+      </div>
+      <div class="button-right">
+        <b-button class="button-radius-left" type="is-dark">Data</b-button>
+        <b-button type="is-primary">Nome</b-button>
+        <b-button class="button-radius-right" type="is-primary">Atualização</b-button>
+      </div>
+    </div>
     
-      <!-- <b-button size="is-small" type="is-dark">diplomas</b-button>
+       <b-button class="diploma-button" size="is-small" type="is-dark">diplomas</b-button>
       
-      <h2>Titulo do diplomas a ser usado como template</h2>
+      <!-- <h2>Titulo do diplomas a ser usado como template</h2>
       <span>Escola que usa  esse diploma</span>
       <span>Curso que usa  esse diploma</span>
       <span>N° de usuarios associados</span>
@@ -205,5 +216,12 @@ header{
 .button-radius-right{
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.diploma-button{
+  justify-content: initial;
+  width: 80px;
+  text-transform: uppercase;
+  border-radius: 60px;
+  text-align: center;
 }
 </style>
