@@ -29,7 +29,7 @@
         
       </b-navbar>
     </div>
-<section class="container">
+<section class="main">
   <b-menu class="menu-lateral">
     <b-menu-list class="menu-lateral2" >
       <b-menu-item class="menu-inicio"  icon="house-user"  label="Inicio"></b-menu-item>
@@ -39,22 +39,20 @@
     </b-menu-list>
   </b-menu>
   <aside class="conteudo">
+    <header>
     <h2 class="template-diploma">Templates de diplomas cadastrados</h2>
-    <b-menu-item class="menu-filtro" icon="filter" label="Filtros"></b-menu-item>
-    <span>Ordernar Por</span>
-     <b-button type="is-dark">Cadastrar</b-button>
-      <b-button type="is-dark">Data</b-button>
-      <b-button type="is-primary">Nome</b-button>
-      <b-button type="is-primary">Atualização</b-button>
-      <b-button size="is-small" type="is-dark">diplomas</b-button>
-
+    <b-button class="button-cadastrar" type="is-dark">Cadastrar</b-button>
+    </header>
+    
+      <!-- <b-button size="is-small" type="is-dark">diplomas</b-button>
+      
       <h2>Titulo do diplomas a ser usado como template</h2>
       <span>Escola que usa  esse diploma</span>
       <span>Curso que usa  esse diploma</span>
       <span>N° de usuarios associados</span>
 
       <span class="bolinha_status _primeira_bolinha "></span>
-      <span class="bolinha_status _segunda_bolinha "></span>
+      <span class="bolinha_status _segunda_bolinha "></span> -->
 
   </aside>
   </section>
@@ -124,8 +122,10 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
 }
-.container{
+.main{
   display: flex;
+  width: 100%;
+  height: 100vh;
 }
 .bolinha_status{
   display: inline-block;
@@ -142,35 +142,68 @@ export default {
 }
 
 .menu-lateral{
-   width: 25%;
+   width: 220px;
     height: 100vh;
     background-color: whitesmoke;
     padding-top: 44px;
-    padding-left: 33px;
     border: 2px 2px #ccc;
 }
-.menu-inicio{
-  padding-top: 10px;
-  color: greenyellow;
-}
-.menu-escolas{
-  padding-top: 10px;
-}
-.menu-usuarios{
-  padding-top: 10px;
-}
-.menu-diploma{
+.menu-inicio, .menu-escolas, .menu-usuarios, .menu-diploma{
   padding-top: 10px;
 }
 .template-diploma{
   font-weight: bolder;
-    padding-left: 25px;
-    font-size: x-large;
-    margin-top: 15px;
+  font-size: x-large;
 
+}
+.conteudo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   padding: 0 30px;
 }
 .menu-filtro{
   padding-left: 20px;
   padding-top: 45px;
+}
+header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.right-menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.filtro-menu{
+  display: flex;
+  
+}
+.button-filter{
+  color: #808080;
+  border: 0;
+}
+.ordernar-por{
+  color: #808080;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.button-cadastrar{
+  border-radius: 8px;
+}
+.button-radius-left{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 50px;
+}
+.button-radius-right{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 </style>
