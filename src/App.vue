@@ -31,16 +31,16 @@
     </div>
 <section class="main">
   <b-menu class="menu-lateral">
-    <b-menu-list class="menu-lateral2" >
-      <b-menu-item class="menu-inicio"  icon="house-user"  label="Inicio"></b-menu-item>
-      <b-menu-item class="menu-escolas"  icon="users" label="Escolas"></b-menu-item>
-      <b-menu-item class="menu-usuarios" icon="user" label="Usuarios"></b-menu-item>
-      <b-menu-item class="menu-diploma" icon="graduation-cap" label="Diplomas"></b-menu-item>
+    <b-menu-list>
+      <b-menu-item icon="house-user"  label="Inicio"></b-menu-item>
+      <b-menu-item icon="users" label="Escolas"></b-menu-item>
+      <b-menu-item icon="user" label="Usuarios"></b-menu-item>
+      <b-menu-item icon="graduation-cap" label="Diplomas"></b-menu-item>
     </b-menu-list>
   </b-menu>
   <aside class="conteudo">
     <header>
-    <h2 class="template-diploma">Templates de diplomas cadastrados</h2>
+    <h1 class="template-diploma">Templates de diplomas cadastrados</h1>
     <b-button class="button-cadastrar" type="is-dark">Cadastrar</b-button>
     </header>
     <div class="right-menu">
@@ -57,24 +57,60 @@
 
     <div class="diplomas-left">
        <b-button class="diploma-button" size="is-small" type="is-dark">diplomas</b-button>
+       <span class="linha-tracejada"></span>
     </div>
       <div class="titulo-template">
       <h2>Titulo do diplomas a ser usado como template</h2>
-      <span>Escola que usa  esse diploma</span>
-      <span>Curso que usa  esse diploma</span>
-      <span>N° de usuarios associados</span>
-
+      <h3>Escola que usa  esse diploma</h3>
+      <h3>Curso que usa  esse diploma</h3>
+      <h3>N° de usuarios associados</h3>
+      <div>
       <span class="bolinha_status _primeira_bolinha "></span>
       <span class="bolinha_status _segunda_bolinha "></span>
       </div>
+      </div>
   </aside>
+  <b-pagination
+            :total="total"
+            v-model="current"
+            :range-before="rangeBefore"
+            :range-after="rangeAfter"
+            :order="order"
+            :size="size"
+            :simple="isSimple"
+            :rounded="isRounded"
+            :per-page="perPage"
+            :icon-prev="prevIcon"
+            :icon-next="nextIcon"
+            aria-next-label="Next page"
+            aria-previous-label="Previous page"
+            aria-page-label="Page"
+            aria-current-label="Current page">
+        </b-pagination>
   </section>
+  
 </div>
 </template>
 
 <script>
 export default {
   name: "app",
+  data() {
+            return {
+                total: 200,
+                current: 10,
+                perPage: 10,
+                rangeBefore: 3,
+                rangeAfter: 1,
+                order: '',
+                size: '',
+                isSimple: false,
+                isRounded: false,
+                prevIcon: 'chevron-left',
+                nextIcon: 'chevron-right'
+            }
+        }
+  
 };
 </script>
 
@@ -145,6 +181,7 @@ export default {
   width: 50px;
   height: 50px;
   border-radius: 25px;
+  margin-right: 15px
 }
 ._primeira_bolinha{
   background-color: red;
@@ -161,8 +198,19 @@ export default {
     padding-top: 44px;
     border: 2px 2px #ccc;
 }
-.menu-inicio, .menu-escolas, .menu-usuarios, .menu-diploma{
-  padding-top: 10px;
+.menu-lateral ul{
+  margin-left: 10px;
+
+}
+.menu-lateral ul li{
+  margin-bottom: 10px;
+
+  
+}
+.menu-lateral ul li:hover{
+  font-weight: bold;
+  
+  
 }
 .template-diploma{
   font-weight: bolder;
@@ -192,7 +240,6 @@ header{
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  border-bottom:  3px dotted #ccc;
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
@@ -228,13 +275,42 @@ header{
   text-transform: uppercase;
   border-radius: 60px!important;
   padding-left: 10px;
+  margin-left: 15px;
 }
 .diplomas-left{
   width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 .titulo-template{
   display: flex;
   width: 100%;
-  
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 25px;
+  align-items: center;
+  border-radius: 10px;
+   box-shadow: 0 3px 5px #ccc;
+
+}
+.linha-tracejada{
+  border-top: dashed 2px #ccc;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  left: 0;
+  z-index: -1;
+}
+.titulo-template h3{
+  color: rebeccapurple;
+}
+.pagination{
+    width: 35rem;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    
 }
 </style>
