@@ -71,6 +71,7 @@
     </div>
   </aside>
   <b-pagination class="pagination-number"
+  
     :total="total"
     v-model="current"
     :range-before="rangeBefore"
@@ -320,16 +321,16 @@ header{
     color: white;
     
 }
-.pagination-number a{
-  justify-content: initial;
-}
-.pagination-list ul li{
-  color: white;
+
+.pagination-list {
+  order: 2;
+  padding-left: 15px;
 }
 .menu-lateral a{
   color: #a9a9a9;
 }
-@media (max-width: 857px){
-
+.pagination-link{
+  color: white;
+  background-color: black;
 }
 </style>
