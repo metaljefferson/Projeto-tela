@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <div>
-      <b-navbar class="color-top">
-        <template #brand>
-          <div class="logo"></div>
-        </template>
-        <template #start>
-          <div class="search">
-            <b-field>
-              <b-input placeholder="Buscar Funcionalidade"
-                type="search"
-                icon-pack="fas"
-                icon="search">
-            </b-input>
-            </b-field>
-          </div>
+    <b-navbar class="color-top">
+      <template #brand>
+        <div class="logo"></div>
+      </template>
+      <template #start>
+        <div class="search">
+        <b-field>
+      <b-input put placeholder="Buscar Funcionalidade"
+        type="search"
+        icon-pack="fas"
+        icon="search">
+      </b-input>
+      </b-field>
+      </div>
         </template>
 
         <template #end>
@@ -40,8 +40,8 @@
   </b-menu>
   <aside class="conteudo">
     <header>
-    <h1 class="template-diploma">Templates de diplomas cadastrados</h1>
-    <b-button class="button-cadastrar" type="is-dark">Cadastrar</b-button>
+      <h1 class="template-diploma">Templates de diplomas cadastrados</h1>
+      <b-button class="button-cadastrar" type="is-dark">Cadastrar</b-button>
     </header>
     <div class="right-menu">
       <div class="filtro-menu">
@@ -59,34 +59,34 @@
        <b-button class="diploma-button" size="is-small" type="is-dark">diplomas</b-button>
        <span class="linha-tracejada"></span>
     </div>
-      <div class="titulo-template">
-      <h2>Titulo do diplomas a ser usado como template</h2>
-      <h3>Escola que usa  esse diploma</h3>
-      <h3>Curso que usa  esse diploma</h3>
-      <h3>N° de usuarios associados</h3>
+    <div class="titulo-template">
+        <h2>Titulo do diplomas a ser usado como template</h2>
+        <h3>Escola que usa  esse diploma</h3>
+        <h3>Curso que usa  esse diploma</h3>
+        <h3>N° de usuarios associados</h3>
       <div>
-      <span class="bolinha_status _primeira_bolinha "></span>
-      <span class="bolinha_status _segunda_bolinha "></span>
+        <span class="bolinha_status _primeira_bolinha "></span>
+        <span class="bolinha_status _segunda_bolinha "></span>
       </div>
-      </div>
+    </div>
   </aside>
   <b-pagination
-            :total="total"
-            v-model="current"
-            :range-before="rangeBefore"
-            :range-after="rangeAfter"
-            :order="order"
-            :size="size"
-            :simple="isSimple"
-            :rounded="isRounded"
-            :per-page="perPage"
-            :icon-prev="prevIcon"
-            :icon-next="nextIcon"
-            aria-next-label="Next page"
-            aria-previous-label="Previous page"
-            aria-page-label="Page"
-            aria-current-label="Current page">
-        </b-pagination>
+    :total="total"
+    v-model="current"
+    :range-before="rangeBefore"
+    :range-after="rangeAfter"
+    :order="order"
+    :size="size"
+    :simple="isSimple"
+    :rounded="isRounded"
+    :per-page="perPage"
+    :icon-prev="prevIcon"
+    :icon-next="nextIcon"
+    aria-next-label="Next page"
+    aria-previous-label="Previous page"
+    aria-page-label="Page"
+    aria-current-label="Current page">
+  </b-pagination>
   </section>
   
 </div>
@@ -96,20 +96,20 @@
 export default {
   name: "app",
   data() {
-            return {
-                total: 200,
-                current: 10,
-                perPage: 10,
-                rangeBefore: 3,
-                rangeAfter: 1,
-                order: '',
-                size: '',
-                isSimple: false,
-                isRounded: false,
-                prevIcon: 'chevron-left',
-                nextIcon: 'chevron-right'
+    return {
+      total: 200,
+      current: 10,
+      perPage: 10,
+      rangeBefore: 3,
+      rangeAfter: 1,
+      order: '',
+      size: '',
+      isSimple: false,
+      isRounded: false,
+      prevIcon: 'chevron-left',
+      nextIcon: 'chevron-right'
             }
-        }
+          }
   
 };
 </script>
@@ -317,6 +317,7 @@ header{
     position: absolute;
     right: 10px;
     bottom: 0;
+    color: white;
     
 }
 .menu-lateral a{
