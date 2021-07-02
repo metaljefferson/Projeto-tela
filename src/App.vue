@@ -314,11 +314,11 @@ header{
   
 }
 .pagination{
-    width: 35rem;
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-    color: white;
+  width: 35rem;
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  color: white;
     
 }
 
@@ -333,4 +333,5 @@ header{
   color: white;
   background-color: black;
 }
+
 </style>
