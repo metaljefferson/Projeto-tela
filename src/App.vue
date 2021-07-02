@@ -70,7 +70,7 @@
       </div>
     </div>
   </aside>
-  <b-pagination
+  <b-pagination class="pagination-number"
     :total="total"
     v-model="current"
     :range-before="rangeBefore"
@@ -319,6 +319,12 @@ header{
     bottom: 0;
     color: white;
     
+}
+.pagination-number{
+  background-color: black;
+}
+.pagination-list ul li{
+  color: white;
 }
 .menu-lateral a{
   color: #a9a9a9;
