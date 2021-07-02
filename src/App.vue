@@ -314,7 +314,7 @@ header{
   
 }
 .pagination{
-  width: 34rem;
+  width: 35rem;
   position: absolute;
   right: 35px;
   bottom: 0;
