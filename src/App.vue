@@ -192,11 +192,11 @@ export default {
 }
 
 .menu-lateral{
-   width: 220px;
-    height: 100vh;
-    background-color: whitesmoke;
-    padding-top: 44px;
-    border: 2px 2px #ccc;
+  width: 230px;
+  height: 100vh;
+  background-color: whitesmoke;
+  padding-top: 44px;
+  border: solid 1px #ccc;
 }
 .menu-lateral ul{
   margin-left: 10px;
@@ -317,5 +317,8 @@ header{
     right: 10px;
     bottom: 0;
     
+}
+.menu-lateral a{
+  color: #a9a9a9;
 }
 </style>
