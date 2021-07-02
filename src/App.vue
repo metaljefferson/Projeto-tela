@@ -117,6 +117,7 @@ export default {
 <style>
 .color-top {
   background-color: #7957d5;
+  box-shadow: 195px 2px 20px;
 }
 
 .logo {
@@ -221,7 +222,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-   padding: 0 30px;
+  padding: 0 30px;
 }
 .menu-filtro{
   padding-left: 20px;
