@@ -304,7 +304,12 @@ header{
   z-index: -1;
 }
 .titulo-template h3{
-  color: rebeccapurple;
+  color: #bf40bf;
+}
+.titulo-template h2{
+  font-weight: bold;
+  font-size: 18px;
+  
 }
 .pagination{
     width: 35rem;
