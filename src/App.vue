@@ -320,13 +320,16 @@ header{
     color: white;
     
 }
-.pagination-number{
-  background-color: black;
+.pagination-number a{
+  justify-content: initial;
 }
 .pagination-list ul li{
   color: white;
 }
 .menu-lateral a{
   color: #a9a9a9;
+}
+@media (max-width: 857px){
+
 }
 </style>
