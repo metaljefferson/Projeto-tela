@@ -22,7 +22,7 @@
             <div class="logo-profile"></div>
             <div class="texts-profile">
               <h3>Super Admin</h3>
-              <span>Super Admin</span>
+              <span>Super Adminn</span>
             </div>
           </div>
         </template>
